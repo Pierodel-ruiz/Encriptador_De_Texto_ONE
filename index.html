@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+
+	<title>	Encriptador de texto ONE - Piero Delgado</title>
+
+</head>
+<body>
+
+	<header>
+		<img src="Imagenes/Logo.png" alt="" class="logo">
+
+		<div class="datos">
+			<a href="https://www.linkedin.com/in/piero-antonio-d-0b0883170/" ><img src="Imagenes/linke.png"></a>
+
+			<a href="https://github.com/Pierodel-ruiz" ><img src="Imagenes/hithub.png"></a>
+
+				<h5>Piero Antonio Delgado Ruiz</h5>
+		</div>
+
+	</header>
+
+	<main>
+			<div class="encriptar" >
+
+				<textarea class="texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
+
+			</div>
+
+			<div class="restriccion">
+				<img src="Imagenes/bi_exclamation-circle-fill.png">
+				<h6>Solo letras minúsculas y sin acentos</h6>
+
+			</div>
+
+			<div class="botones">
+
+				<button class="btnencriptar" type="button" onclick="encriptar()" >Encriptar</button>
+				<button class="btndesencriptar" type="button" onclick="desencriptar()" >Desencriptar</button>
+
+
+			</div>
+	</main>
+
+	<aside>
+
+		<img src="Imagenes/Encriptador By Piero Delgado.png" alt="" id="muñeco" >
+		<button class="copiar" id="copiar" type="button" onclick="copiarportapapeles()"  >Copiar</button>
+
+		<div class="mensajencriptado" id="mensajencriptado">
+			
+			<h2 id="titulomensaje">Ningún mensaje fue encontrado</h2>
+			<h6 id="parrafomensaje"  >Ingresa el texto que desees encriptar o desencriptar.</h6> 
+			<textarea readonly name="mensaje" id="mensaje" class="mensaje" cols="40" rows="10"  ></textarea> 
+		</div>
+		
+	</aside>
+
+</body>
+<script type="text/javascript" src="script.js" ></script>
+</html>
